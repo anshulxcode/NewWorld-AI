@@ -1,0 +1,73 @@
+# NetWorld-AI Hyperparameters and Feature Configuration
+# SIH 2026 NTRO PS 26153 - Phase 1: Data Foundation
+
+hyperparameters:
+  window_size: 100
+  sequence_length: 10
+  lstm_hidden: 128
+  num_layers: 2
+  dropout: 0.2
+  k_steps: 5
+  batch_size: 64
+  epochs: 50
+  learning_rate: 0.001
+  random_seed: 42
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  data_sample: "data/sample"
+  model_path: "models"
+  scaler_path: "models/scaler.joblib"
+
+features:
+  # Flow Level Metrics
+  - src_port
+  - dst_port
+  - protocol
+  - duration
+  - total_packets
+  - total_bytes
+  - packet_rate
+  - bytes_rate
+
+  # TCP Flag Counts & Ratios
+  - syn_count
+  - ack_count
+  - fin_count
+  - rst_count
+  - psh_count
+  - syn_ack_ratio
+
+  # Inter-Arrival Time (IAT) Statistics
+  - iat_mean
+  - iat_std
+  - iat_max
+  - iat_min
+
+  # Directional Split Metrics
+  - fwd_packets
+  - bwd_packets
+  - fwd_bytes
+  - bwd_bytes
+  - fwd_bwd_ratio
+
+  # Packet Sizing Statistics
+  - avg_packet_size
+  - payload_std
+  - fwd_pkt_len_mean
+  - bwd_pkt_len_mean
+  - pkt_len_max
+  - pkt_len_min
+
+  # Reconnaissance Metrics
+  - unique_dst_ports_per_src
+  - recon_score
+  - port_sequence_entropy
+
+  # Packet Header & Protocol Details
+  - ttl_mean
+  - ttl_std
+  - tcp_window_mean
+  - fragment_flag_count
+  - retransmission_count

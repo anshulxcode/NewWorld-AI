@@ -1,0 +1,12 @@
+{
+    "epochs_trained": 26,
+    "final_train_loss": 0.07395978607762028,
+    "final_val_loss": 0.17346319556236267,
+    "baseline_lr": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "accuracy": 1.0
+    }
+}

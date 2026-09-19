@@ -1,0 +1,4 @@
+Model,Precision,Recall,F1-Score,FPR,Accuracy,AUROC / K-Step MSE
+Baseline Logistic Regression,1.0,0.3,0.46153846153846156,0.0,0.3,N/A
+LSTM World Model (Risk Head),1.0,1.0,1.0,0.0,1.0,K=5 MSE: 0.0143
+Autoencoder Novelty Detector,N/A,N/A,N/A,N/A,N/A,AUROC: 0.0000

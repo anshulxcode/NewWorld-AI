@@ -1,0 +1,31 @@
+{
+  "execution_mode": "VERIFIED INFERENCE RESULTS",
+  "early_warning_metrics": {
+    "mean_early_warning_sec": -5.0,
+    "median_early_warning_sec": -5.0,
+    "std_early_warning_sec": 0.0,
+    "episodes_evaluated": 6,
+    "comparison_table": [
+      {
+        "System": "Baseline IDS (alerts at onset)",
+        "Early Warning Time": "0.00 sec (T=0)",
+        "Lead Time": "0.00 sec"
+      },
+      {
+        "System": "Our Model (NetWorld-AI)",
+        "Early Warning Time": "T=-5.00 sec",
+        "Lead Time": "5.00 sec early (Mean +/- Std: -5.00s +/- 0.00s)"
+      }
+    ]
+  },
+  "scalar_prediction_outputs": {
+    "mean_attack_probability": 0.3087206482887268,
+    "mean_model_confidence": 0.9997833371162415,
+    "mean_data_quality_score": 0.7200000000000001
+  },
+  "calibration_metrics": {
+    "brier_score": 0.0001401869420386935,
+    "expected_calibration_error": 0.008897165488451719,
+    "reliability_diagram_path": "outputs\\calibration_curve.png"
+  }
+}
