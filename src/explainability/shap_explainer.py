@@ -7,9 +7,9 @@ and provides live counterfactual re-inference to evaluate risk deltas under modi
 from typing import List, Dict, Any, Tuple
 import numpy as np
 import torch
-import shap
 
 from src.models import LSTMWorldModel
+
 from src.utils import setup_logger
 
 logger = setup_logger("shap_explainer")

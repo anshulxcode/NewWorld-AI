@@ -1,16 +1,9 @@
---extra-index-url https://download.pytorch.org/whl/cpu
-streamlit>=1.28.0
-torch
+fastapi>=0.100.0
+uvicorn>=0.22.0
 pandas>=2.1.0
 numpy
 scikit-learn>=1.3.0
-plotly>=5.17.0
-matplotlib
-shap>=0.43.0
-scapy>=2.5.0
 pyyaml>=6.0
 joblib>=1.3.0
 tqdm>=4.66.0
-imbalanced-learn>=0.11.0
-fastapi>=0.100.0
-uvicorn>=0.22.0
+torch @ https://download.pytorch.org/whl/cpu/torch-2.4.0%2Bcpu-cp312-cp312-linux_x86_64.whl
