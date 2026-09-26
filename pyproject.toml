@@ -28,6 +28,3 @@ explicit = true
 [tool.uv.sources]
 torch = { index = "pytorch-cpu" }
 
-[tool.vercel]
-entrypoint = "api/index.py"
-
